@@ -5,15 +5,3 @@ layout: default
 {% include carousel.html %}
 {% include about.html %}
 {% include projects_menu.html %}
-
-{% for post in site.posts %}
-  <li>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-  </li>
-{% endfor %}
-
-{% include still_background.html %}

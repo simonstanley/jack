@@ -1,7 +1,16 @@
 .main-text {
-    font-size: 110%;
+  font-size: 110%;
 }
 
 .main-header {
-    margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.project-box {
+  padding: 0;
+}
+
+.project-link {
+  margin: 1em;
+  border: 2px solid black;
 }
