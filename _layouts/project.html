@@ -3,37 +3,31 @@ layout: default
 ---
 {% include project_navbar.html %}
 
-<div class="project">
+ <div class="container">
 
   <div class="text-center pad-top">
     <h1 class="project-header">{{ page.title }}</h1>
   </div>
 
-  <div class="container">
-      <div class="row text-center" >
-          <div class="col-sm-12">
-              <p>{{ content }}</p>
-          </div>
+  <div class="row text-center" >
+      <div class="col-sm-12">
+          <p>{{ content }}</p>
       </div>
   </div>
 
-  <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <a href="{{ page.vimeo }}" class="center-block project_img_link">
-            <img src="{{ page.thumbnail }}" class="img-responsive" alt="">
-          </a>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-md-12">
+      <a href="{{ page.vimeo }}" class="center-block project_img_link">
+        <img src="{{ page.thumbnail }}" class="img-responsive" alt="">
+      </a>
+    </div>
   </div>
 
-  <div class="container">
-      <div class="row" >
-          <div class="col-md-12">
-              <p class="credentials">
-                  {{ page.credentials }}
-              </p>
-          </div>
+  <div class="row" >
+      <div class="col-md-12">
+          <p class="credentials">
+              {{ page.credentials }}
+          </p>
       </div>
   </div>
 
