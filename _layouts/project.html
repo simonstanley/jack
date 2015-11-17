@@ -5,15 +5,36 @@ layout: default
 
 <div class="project">
 
-  <div class="text-center pad-row">
-    <h1 class="main-header">{{ page.title }}</h1>
+  <div class="text-center pad-top">
+    <h1 class="project-header">{{ page.title }}</h1>
   </div>
 
-  <div class="row">
-    <div class="col-lg-3 col-sm-6 project-box">
-      <a href="{{ page.video_link }}" class="portfolio-box project-link">
-        <img src="{{ page.thumbnail }}" class="img-responsive" alt="">
-      </a>
-    </div>
+  <div class="container">
+      <div class="row text-center" >
+          <div class="col-sm-12">
+              <p>{{ content }}</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="{{ page.vimeo }}" class="center-block project_img_link">
+            <img src="{{ page.thumbnail }}" class="img-responsive" alt="">
+          </a>
+        </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="row" >
+          <div class="col-md-12">
+              <p class="credentials">
+                  {{ page.credentials }}
+              </p>
+          </div>
+      </div>
+  </div>
 
 </div>

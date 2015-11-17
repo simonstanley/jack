@@ -16,7 +16,23 @@
 }
 
 .project {
-    padding-top: 100px;
+}
+
+.project-header {
+    padding: 1em;
+}
+
+.project_img_link {
+    padding-bottom: 2em;
+    display: block;
+    max-width: 30em;
+    cursor: pointer;
+}
+
+.credentials {
+    border-top: 1px solid black;
+    padding-top: 2ex;
+    font-size: 0.8em;
 }
 
 #home {
