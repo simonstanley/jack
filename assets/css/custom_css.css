@@ -7,7 +7,12 @@
 }
 
 .title_logo {
-    width: 16em;
+    width: 14em;
+    height: auto;
+}
+
+.logo {
+    width: 3.5em;
     height: auto;
 }
 
@@ -25,10 +30,15 @@
 }
 
 .project_img_link {
-    padding-bottom: 2em;
+    margin-bottom: 2em;
     display: block;
     max-width: 30em;
     cursor: pointer;
+    border: 2px solid black;
+}
+
+.project_img_link .portfolio-box-caption {
+    opacity: 0.6;
 }
 
 .credentials {
