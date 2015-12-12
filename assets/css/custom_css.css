@@ -26,7 +26,6 @@
 }
 
 .project-header {
-    padding: 1em;
 }
 
 .project_img_link {
@@ -41,10 +40,37 @@
     opacity: 0.6;
 }
 
+.project_container {
+    max-width: 60em;
+}
+
+.project_video {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+.h_iframe {
+    position:relative;
+}
+
+.h_iframe .ratio {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.h_iframe iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
 .credentials {
     border-top: 1px solid black;
     padding-top: 2ex;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 #home {

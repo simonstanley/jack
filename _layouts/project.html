@@ -3,29 +3,39 @@ layout: default
 ---
 {% include project_navbar.html %}
 
- <div class="container">
+ <div class="container project_container">
 
-  <div class="text-center pad-top">
-    <h1 class="project-header">{{ page.title }}</h1>
-  </div>
+    <h3 class="project-header">{{ page.title }}</h3>
 
-  <div class="row text-center" >
-      <div class="col-sm-12">
-          <p>{{ content }}</p>
-      </div>
-  </div>
+    <div class="project_video">
+        <div class="h_iframe">
+            <img class="ratio" src="{{ page.thumbnail }}"/>
+            <iframe frameborder="0" allowfullscreen
+                src="{{ page.youtube }}">
+            </iframe>
 
-  <div class="row">
-    <div class="col-md-12">
-      <a href="{{ page.vimeo }}" class="center-block project_img_link portfolio-box">
+        </div>
+      <!-- <a href="{{ page.vimeo }}" class="">
         <img src="{{ page.thumbnail }}" class="img-responsive" alt="">
         <div class="portfolio-box-caption">
           <div class="portfolio-box-caption-content">
             <i class="fa fa-play fa-3x"></i>
           </div>
         </div>
-      </a>
-    </div>
+      </a> -->
+  </div>
+
+    <!-- <div class="wrapper">
+            <div class="h_iframe">
+            <img class="ratio" src="http://placehold.it/16x9"/>
+            <iframe src="http://www.youtube.com/embed/WsFWhL4Y84Y" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div> -->
+
+  <div class="row text-center" >
+      <div class="col-sm-12">
+          <p>{{ content }}</p>
+      </div>
   </div>
 
   <div class="row" >
