@@ -262,6 +262,11 @@ border: 1px solid #e1e1e1;
 #footer-sec {
     background-color:#000;
     color:#808080;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 1.5em;
+    width: 90%;
+    padding: 1em;
 }
     #footer-sec h4 {
         text-transform:uppercase;

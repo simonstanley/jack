@@ -1,3 +1,31 @@
+@font-face {
+    font-family:"goudyo";
+    src: url("goudyo.ttf")
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:'goudyo', sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    font-family:'goudyo', sans-serif;
+}
+
+a > li {
+    font-family:'goudyo', sans-serif;
+}
+
+body {
+    /*background-image: url("crumpled-brown-paper.jpg");*/
+    background-image: url("grungy_paper.jpg");
+}
+
+#wrapper {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 3em;
+}
+
 .main-text {
   font-size: 110%;
 }
@@ -8,6 +36,16 @@
 
 .title_logo {
     width: 14em;
+    height: auto;
+}
+
+.about_sec {
+    display: flex;
+    align-items: flex-end;
+}
+
+.about_sec img {
+    width: 15em;
     height: auto;
 }
 
@@ -74,15 +112,21 @@
 }
 
 #home {
-  background-color: rgb(34, 34, 34);
   padding-top: 80px;
 }
 
 #projects {
-  background: rgba(216, 214, 214, 0.5);
   padding-bottom: 30px
 }
 
 #blog {
-  background: rgba(216, 214, 214, 1);
+}
+
+#contact_details {
+    font-size: 2em;
+}
+
+#footer_note {
+    float: right;
+    padding-right: 2em;
 }
