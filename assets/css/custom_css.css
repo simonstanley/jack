@@ -18,7 +18,7 @@ a > li {
 
 body {
     /*background-image: url("crumpled-brown-paper.jpg");*/
-    background-image: url("grungy_paper.jpg");
+    background-image: url("grungy_paper1.jpg");
 }
 
 #wrapper {
@@ -112,7 +112,7 @@ body {
 }
 
 #home {
-  padding-top: 80px;
+  padding-top: 78px;
 }
 
 #projects {
