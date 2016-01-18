@@ -8,8 +8,8 @@ layout: default
 
     <div class="row text-center" >
         <div class="col-md-12">
-          <div class="row text-center pad-row">
-            <h3 class="main-header">{{ page.title }}</h3>
+          <div class="row text-center">
+            <h1 class="main-header">{{ page.title }}</h1>
           </div>
         </div>
     </div>
@@ -21,14 +21,6 @@ layout: default
 
               <div id="gall-carousel" class="carousel slide" data-ride="carousel">
 
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#gall-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#gall-carousel" data-slide-to="1"></li>
-                    <li data-target="#gall-carousel" data-slide-to="2"></li>
-                    <li data-target="#gall-carousel" data-slide-to="3"></li>
-                  </ol>
-
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     {% for url in page.image_urls %}
@@ -37,7 +29,9 @@ layout: default
                         {% else %}
                             <div class="item">
                         {% endif %}
-                          <img src="{{ gallery_dir }}/{{ page.image_dir }}/{{ url }}" alt="IMAGE">
+                            <div class="gall_contain">
+                          <img src="{{ gallery_dir }}/{{ page.image_dir }}/{{ url }}" alt="" class="gallery-img">
+                            </div>
                         </div>
 
                     {% endfor %}

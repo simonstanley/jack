@@ -40,12 +40,12 @@ body {
 }
 
 .about_sec {
-    display: flex;
-    align-items: flex-end;
 }
 
 .about_sec img {
-    width: 15em;
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 13em;
     height: auto;
 }
 
@@ -109,6 +109,26 @@ body {
     border-top: 1px solid black;
     padding-top: 2ex;
     font-size: 1em;
+}
+
+.gallery-img {
+    width: 450px;
+    border: 2px solid black;
+}
+
+.gall_contain {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gall_title {
+    margin-left: 20px;
+}
+
+#gall-carousel {
+
 }
 
 #home {
