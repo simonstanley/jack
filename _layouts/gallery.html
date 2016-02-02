@@ -4,52 +4,28 @@ layout: default
 {% include project_navbar.html %}
 {% assign gallery_dir = '/jack/assets/img/gallery' %}
 
-<div class="container-fluid ">
+<header id="gall-carousel-sec" class="carousel">
 
-    <div class="row text-center" >
-        <div class="col-md-12">
-          <div class="row text-center">
-            <h1 class="main-header">{{ page.title }}</h1>
-          </div>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+    {% for url in page.image_urls %}
+        {% if forloop.first %}
+            <div class="item active">
+        {% else %}
+            <div class="item">
+        {% endif %}
+            <div class="fill" style="background-image:url('{{ gallery_dir }}/{{ page.image_dir }}/{{ url }}');"></div>
         </div>
-    </div>
 
-    <div class="row text-center" >
-        <div class="col-sm-12">
-            <div class="row no-gutter">
-
-
-              <div id="gall-carousel" class="carousel slide" data-ride="carousel">
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    {% for url in page.image_urls %}
-                        {% if forloop.first %}
-                            <div class="item active">
-                        {% else %}
-                            <div class="item">
-                        {% endif %}
-                            <div class="gall_contain">
-                          <img src="{{ gallery_dir }}/{{ page.image_dir }}/{{ url }}" alt="" class="gallery-img">
-                            </div>
-                        </div>
-
-                    {% endfor %}
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#gall-carousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#gall-carousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-
-             </div>
-        </div>
-    </div>
-
+    {% endfor %}
 </div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#gall-carousel-sec" data-slide="prev">
+    <span class="icon-prev"></span>
+</a>
+<a class="right carousel-control" href="#gall-carousel-sec" data-slide="next">
+    <span class="icon-next"></span>
+</a>
+
+</header>

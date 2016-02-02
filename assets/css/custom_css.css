@@ -1,29 +1,25 @@
 @font-face {
-    font-family:"goudyo";
-    src: url("goudyo.ttf")
+    font-family:"GoudyTrajan";
+    src: url("/jack/assets/fonts/GoudyTrajan-Regular-trial.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family:'goudyo', sans-serif;
-    font-weight: lighter;
+    font-family:'GoudyTrajan', sans-serif;
 }
 
 p {
-    font-family:'goudyo', sans-serif;
+    font-family: verdana;
 }
 
 a > li {
-    font-family:'goudyo', sans-serif;
+    font-family: verdana;
 }
 
 body {
     /*background-image: url("crumpled-brown-paper.jpg");*/
     background-image: url("grungy_paper1.jpg");
-}
-
-#wrapper {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding-bottom: 3em;
 }
 
 .main-text {
@@ -44,14 +40,24 @@ body {
 
 .about_sec img {
     float: right;
-    margin: 0 0 10px 10px;
+    margin: 0 10px 0 10px;
     width: 13em;
     height: auto;
+    border: solid 3px rgb(69, 69, 69);
+    border-radius: 4px;
 }
 
 .logo {
-    width: 3.5em;
+    width: 4em;
     height: auto;
+}
+
+.logo_sec {
+    margin: 2em;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    width: auto;
+    border-bottom: solid 1px rgb(69, 69, 69);
 }
 
 .project-box {
@@ -59,8 +65,10 @@ body {
 }
 
 .project-link {
-  margin: 1em;
-  border: 2px solid black;
+  margin: 1.5em;
+  border: solid 2px rgb(51, 48, 46);
+  border-radius: 1px;
+  box-shadow: 2px 2px 5px rgba(42, 42, 42, 0.86);
 }
 
 .project-header {
@@ -105,6 +113,13 @@ body {
     height:100%;
 }
 
+.gallery-link {
+    margin: 1.5em;
+    border: solid 2px rgb(51, 48, 46);
+    border-radius: 1px;
+    box-shadow: 2px 2px 5px rgba(42, 42, 42, 0.86);
+}
+
 .credentials {
     border-top: 1px solid black;
     padding-top: 2ex;
@@ -117,7 +132,7 @@ body {
 }
 
 .gall_contain {
-    height: 600px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,8 +142,29 @@ body {
     margin-left: 20px;
 }
 
+.gall_link_sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.gall_link {
+    flex: 0 0 200px;
+}
+
+.contact_details {
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-family:'GoudyTrajan', sans-serif;
+}
+
 #gall-carousel {
 
+}
+
+#gallery {
 }
 
 #home {
@@ -136,17 +172,16 @@ body {
 }
 
 #projects {
-  padding-bottom: 30px
+  padding: 30px
 }
 
 #blog {
 }
 
-#contact_details {
-    font-size: 2em;
-}
-
 #footer_note {
     float: right;
     padding-right: 2em;
+}
+
+#gall-carousel-sec {
 }
