@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family:"Quicksand-Bold";
+    src: url("../fonts/Quicksand-Bold.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 h1, h2, h3, h4, h5 {
     font-family:'Quicksand', sans-serif;
@@ -18,8 +24,8 @@ a > li {
 }
 
 body {
-    /*background-image: url("crumpled-brown-paper.jpg");*/
-    background-image: url("grungy_paper1.jpg");
+    background-image: url("grungy_paper1.png");
+    background-position: center;
 }
 
 .main-text {
@@ -88,6 +94,7 @@ body {
 
 .project_container {
     max-width: 60em;
+    margin-top: 100px;
 }
 
 .project_video {
@@ -156,8 +163,22 @@ body {
 
 .contact_details {
     padding-top: 1em;
-    font-size: 1.5em;
-    font-family:'GoudyTrajan', sans-serif;
+    font-size: 1.7em;
+    font-family:'Quicksand-Bold', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    .contact_details {
+        font-size: 1em;
+    }
+}
+
+#contact {
+    margin-top: 10ex;
+}
+
+#footer-sec {
+    margin-bottom: 3em
 }
 
 #gall-carousel {
