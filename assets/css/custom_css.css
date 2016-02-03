@@ -173,6 +173,26 @@ body {
     }
 }
 
+.social_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50px;
+}
+
+.icon_link {
+    margin: 0 3px 0 3px;
+    display: block;
+    position: relative;
+}
+
+.icon_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 #contact {
     margin-top: 10ex;
 }
@@ -205,4 +225,5 @@ body {
 }
 
 #gall-carousel-sec {
+    margin-top: 82px;
 }
