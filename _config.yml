@@ -8,3 +8,4 @@ url: "http://simonstanley.github.io/jack" # the base hostname & protocol for you
 
 # Build settings
 markdown: kramdown
+baseurl: /jack

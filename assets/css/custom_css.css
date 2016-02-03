@@ -1,20 +1,27 @@
 @font-face {
     font-family:"GoudyTrajan";
-    src: url("/assets/fonts/GoudyTrajan-Regular-trial.otf") format('truetype');
+    src: url("assets/fonts/GoudyTrajan-Regular-trial.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Quicksand";
+    src: url("assets/fonts/Quicksand-Regular.otf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family:'GoudyTrajan', sans-serif;
+    font-family:'Quicksand', sans-serif;
 }
 
 p {
-    font-family: verdana;
+    font-family: 'Quicksand', verdana;
 }
 
 a > li {
-    font-family: verdana;
+    font-family: 'Quicksand', verdana;
 }
 
 body {
