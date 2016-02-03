@@ -46,11 +46,17 @@ body {
 
 .about_sec img {
     float: right;
-    margin: 0 10px 0 10px;
+    margin: 10px;
     width: 13em;
     height: auto;
     border: solid 3px rgb(69, 69, 69);
     border-radius: 4px;
+}
+
+@media screen and (max-width: 480px) {
+    .about_sec img {
+        width: 6em;
+    }
 }
 
 .logo {
