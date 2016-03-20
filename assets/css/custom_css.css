@@ -72,9 +72,6 @@ body {
     border-bottom: solid 1px rgb(69, 69, 69);
 }
 
-.project-box {
-}
-
 .project-link {
   margin: 1.5em;
   border: solid 2px rgb(51, 48, 46);
@@ -107,6 +104,18 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    flex: 1 1 400px;
+}
+
 .h_iframe {
     position:relative;
 }
@@ -163,7 +172,7 @@ body {
 }
 
 .gall_link {
-    flex: 0 0 200px;
+    flex: 0 0 300px;
 }
 
 .gallery-header {
