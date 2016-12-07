@@ -37,15 +37,14 @@ a {
     margin-top: 100px;
     width: 70%;
 
-    img {
-        height: 280px;
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
     .about-text {
-        margin-top: 40px;
+        margin-top: 30px;
+    }
+}
+
+.small .container {
+    margin-top: $nav-height + $nav-top-margin + 30px;
+    .about_container {
+        margin-top: 0px;
     }
 }

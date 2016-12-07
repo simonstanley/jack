@@ -38,17 +38,25 @@
 .footer-sub {
     float: right;
     margin-bottom: 15px;
+    margin-right: 15px;
 }
 .small #footer {
-    margin-top: $footer-margin-top / 2;
+    margin-top: 30px;
+    margin-bottom: 10px;
     width: $footer-width - 10%;
+    align-items: center;
 
     .footer-main {
         flex-direction: column;
 
+        #contact {
+            text-align: center;
+        }
 
         #social {
-            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
     }
 }
