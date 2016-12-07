@@ -1,0 +1,44 @@
+.info_top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    .info_top-text {
+
+        .info_top-title {
+            margin-left: 20px;
+            margin-top: 0;
+        }
+
+        ul {
+            margin-bottom: 50px;
+            padding-left: 20px;
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .brands {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        > img {
+            height: 80px;
+            border: 1px solid #000000;
+        }
+    }
+}
+
+.small .info_top {
+
+    .brands {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,50 @@
+---
+# Styles for about page.
+---
+@import "fonts";
+@import "_main_settings";
+@import "_nav_settings";
+@import "navbar";
+@import "_footer_settings";
+@import "footer";
+@import "design";
+
+body {
+    background-color: $body-background-color;
+    background-image: url('/static/img/rebel.png');
+    color: $body-text-color;
+    font-family: "latin-sans", Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: $body-text-color;
+}
+.hidden {
+    display: none !important;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: $nav-height + $nav-top-margin + 60px;
+    max-width: $main-max-width;
+}
+
+.about_container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 70%;
+
+    img {
+        height: 280px;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .about-text {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,22 @@
+$proj-menu-width-percent: 92%;
+$proj-menu-margin-top: 40px;
+$proj-menu-img-margin: 5px;
+$proj-menu-margin-between: 20px;
+
+$proj-menu-item-min-width: 260px;
+$proj-menu-item-height: 220px;
+$proj-menu-item-margin-bottom: 10px;
+$proj-menu-item-border-width: 1px;
+$proj-menu-item-border-color: $main-border-color;
+
+
+$proj-menu-blurb-margin: 10px;
+$proj-menu-title-font-size: 12px;
+$proj-menu-desc-font-size: 10px;
+
+
+// Calculated
+$proj-menu-margin-between-adjusted: (2 * $proj-menu-desc-font-size) + $proj-menu-title-font-size + $proj-menu-img-margin + $proj-menu-item-margin-bottom;
+$proj-menu-item-size-scale-small: 0.7;
+$proj-menu-item-min-width-small: $proj-menu-item-min-width * $proj-menu-item-size-scale-small;
+$proj-menu-item-height-small: $proj-menu-item-height * $proj-menu-item-size-scale-small;

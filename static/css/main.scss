@@ -1,0 +1,37 @@
+---
+# Main styles for site.
+---
+@import "fonts";
+@import "_main_settings";
+@import "_nav_settings";
+@import "navbar";
+@import "_title_settings";
+@import "title";
+@import "_carousel_settings";
+@import "carousel";
+@import "info_top";
+@import "_projects_menu_settings";
+@import "projects_menu";
+@import "_footer_settings";
+@import "footer";
+@import "design";
+
+body {
+    background-color: $body-background-color;
+    background-image: url('/static/img/rebel.png');
+    color: $body-text-color;
+    font-family: "latin-sans", Georgia, Times, "Times New Roman", serif;
+    font-size: $main-font-size;
+}
+a {
+    text-decoration: none;
+    color: $body-text-color;
+}
+.container {
+    margin: 0 auto;
+    margin-top: $nav-height + $nav-top-margin + $main-top-margin;
+    max-width: $main-max-width;
+}
+.hidden {
+    display: none !important;
+}

@@ -1,0 +1,109 @@
+---
+# Styles for project pages.
+---
+@import "fonts";
+@import "_main_settings";
+@import "_project_settings";
+@import "_nav_settings";
+@import "navbar";
+@import "_footer_settings";
+@import "footer";
+@import "design";
+
+body {
+    background-color: $body-background-color;
+    background-image: url('/static/img/rebel.png');
+    color: $body-text-color;
+    font-family: "latin-sans", Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: $body-text-color;
+}
+.hidden {
+    display: none !important;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: $nav-height + $nav-top-margin + $project-top-margin;
+    max-width: $main-max-width;
+}
+
+.project-title {
+    display: inline-block;
+}
+.project-subtitle {
+    display: inline-block;
+    font-size: 25px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid $theme-color;
+}
+.project-video {
+    margin: 40px auto;
+    width: 80%;
+
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.project-images {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid $theme-color;
+    width: 81%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    img {
+        width: auto;
+        height: 150px;
+        margin: 5px;
+        border: 1px solid $main-border-color;
+    }
+}
+
+.project-text {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 80%;
+}
+
+.project-credentials {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 10px;
+    border-top: 1px solid $theme-color;
+}
+
+.small {
+    .project-title {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .project-subtitle {
+        display: inline-block;
+        font-size: 15px;
+        padding-left: 20px;
+        margin-left: 20px;
+        border-left: 1px solid $theme-color;
+    }
+    .project-video {
+        iframe {
+            height: 200px;
+        }
+    }
+    .project-images {
+        img {
+            height: 50px;
+        }
+    }
+}

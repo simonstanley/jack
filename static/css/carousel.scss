@@ -1,0 +1,101 @@
+.carousel {
+    margin: 0 auto;
+    width: $car-width-percent;
+    position: relative;
+    padding-bottom: $car-height;
+    border: $car-border-width solid $car-border-color;
+
+    .carousel-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .carousel-arrows {
+            position: absolute;
+            top: $car-arrows-top;
+            left: $car-arrows-left;
+            width: $car-arrows-width;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .carousel-arrow img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .carousel-left,
+            .carousel-right {
+                opacity: $car-control-opicity;
+            }
+
+            .carousel-left:hover,
+            .carousel-right:hover {
+                cursor: pointer;
+                opacity: $car-control-highlight-opicity;
+            }
+        }
+
+        .carousel-links {
+            position: absolute;
+            top: $car-links-top;
+            left: $car-links-left-centered;
+            width: $car-links-width;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .carousel-link {
+                opacity: $car-control-opicity;
+                width: 16px;
+                height: 16px;
+                text-align: center;
+            }
+            .carousel-link > span {
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                border-radius: 2px;
+                border: 1px solid $theme-color;
+            }
+            .carousel-link.active > span {
+                background-color: $theme-color;
+            }
+            .carousel-link:hover {
+                opacity: $car-control-highlight-opicity;
+                cursor: pointer;
+            }
+        }
+
+        .carousel-images {
+            height: inherit;
+
+            .carousel-image {
+                position: absolute;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: inherit;
+                opacity: 0;
+                z-index: -10;
+            }
+            .carousel-image.active {
+                opacity: 1;
+            }
+        }
+    }
+}
+.small .carousel {
+    .carousel-container {
+        .carousel-arrows {
+            .carousel-arrow img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .carousel-links {
+            left: $car-links-left-centered-small;
+            width: $car-links-width-small;
+        }
+    }
+}

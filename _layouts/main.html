@@ -1,6 +1,12 @@
 ---
-layout: default
+layout: base
 ---
 
+{% include main_head.html %}
+<body>
     {% include navbar.html %}
-    {{ content }}
+    <div class="container">
+        {{ content }}
+        {% include footer.html %}
+    </div>
+</body>
