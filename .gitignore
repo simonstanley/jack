@@ -2,3 +2,4 @@ _site
 .sass-cache
 unused
 .DS_Store
+js_full
