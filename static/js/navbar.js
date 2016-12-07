@@ -4,15 +4,14 @@
 */
 $(document).ready(function() {
 
-    var nav_change_duration = 500;
+    var nav_change_duration = 600;
 
     function init() {
         // Make sure everything is closed on page load.
         var $content = $('.dropdown-content');
         closeDropdown($content, 1);
         if ($('html').hasClass('small')) {
-            var $menu = $('.nav-menu');
-            closeMenu($menu, 1);
+            $(document).trigger('small-screen');
         }
     }
 
