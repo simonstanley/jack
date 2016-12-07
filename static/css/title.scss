@@ -1,0 +1,16 @@
+.title-text {
+    display: inline-block;
+    font-size: $title-font-size;
+    color: $title-font-color;
+    cursor: default;
+    border-right: 1px dashed $theme-color;
+    padding-right: $title-space;
+    margin: $title-space;
+}
+
+.small .title-text {
+    font-size: $title-font-size-small;
+    padding-right: $title-space-small;
+    padding-bottom: 4px;
+    margin: $title-space-small;
+}

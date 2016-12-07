@@ -1,64 +1,37 @@
-<!-- Full Page Image Background Carousel Header -->
-<header id="carousel-sec" class="carousel slide">
-
-    <!-- Wrapper for Slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car1.jpg');"></div>
-            <div class="carousel-caption">
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-arrows">
+            <div class="carousel-arrow carousel-left">
+                <img src="{{ site.img_dir }}/icons/arrow_left.png" alt="arrow" />
+            </div>
+            <div class="carousel-arrow carousel-right">
+                <img src="{{ site.img_dir }}/icons/arrow_right.png" alt="arrow" />
             </div>
         </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car2.jpg');"></div>
-            <div class="carousel-caption">
-            </div>
+        <div class="carousel-links">
+        {% for img_id in (1..page.carousel_img_urls.size) %}
+            {% if forloop.first %}
+                <div id="carousel-link{{ img_id }}" class="carousel-link active" data-img-id="{{ img_id }}">
+                    <span></span>
+                </div>
+            {% else %}
+                <div id="carousel-link{{ img_id }}" class="carousel-link" data-img-id="{{ img_id }}">
+                    <span></span>
+                </div>
+            {% endif %}
+        {% endfor %}
         </div>
-        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car3.jpg');"></div>
-            <div class="carousel-caption">
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car4.jpg');"></div>
-            <div class="carousel-caption">
-            </div>
-        </div>
-        <div class="item active">
-            <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car5.jpg');"></div>
-            <div class="carousel-caption">
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car6.jpg');"></div>
-            <div class="carousel-caption">
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car7.jpg');"></div>
-            <div class="carousel-caption">
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/assets/img/carousel/car8.jpg');"></div>
-            <div class="carousel-caption">
-            </div>
+        <div class="carousel-images">
+        {% for url in page.carousel_img_urls %}
+            {% assign img_id = forloop.index %}
+            {% if forloop.first %}
+                <div id="carousel-image{{ img_id }}" class="carousel-image active" style="background-image:url('{{ site.img_dir }}/{{ url }}')">
+                </div>
+            {% else %}
+                <div id="carousel-image{{ img_id }}" class="carousel-image"  style="background-image:url('{{ site.img_dir }}/{{ url }}')">
+                </div>
+            {% endif %}
+        {% endfor %}
         </div>
     </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-sec" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-sec" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
-
-</header>
+</div>

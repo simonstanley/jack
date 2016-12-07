@@ -1,8 +1,9 @@
 # Site settings
-title: Jack Mackenzie Pointer
+title: Jack Pointer Mackenzie
 email: simon.stanley87@gmail.com
-description: Jack Mackenzie Pointer, dancer, choreography and visionary.
-url: "http://simonstanley.github.io/jack" # the base hostname & protocol for your site
+img_dir: /static/img
 
 # Build settings
 markdown: kramdown
+sass:
+    sass_dir: static/css

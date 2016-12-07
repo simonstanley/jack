@@ -1,0 +1,26 @@
+.design-sheet {
+    position: relative;;
+
+    .design {
+        position: absolute;
+    }
+
+    .d1 {
+        width: 150px;
+        border-top: 1px solid #12e4ff;
+        top: 30px;
+        right: 30px;
+    }
+    .d2 {
+        height: 50px;
+        border-right: 1px solid #126f7b;
+        top: 20px;
+        right: 50px;
+    }
+}
+
+.small .design-sheet {
+    .d1, .d2 {
+        display: none;
+    }
+}

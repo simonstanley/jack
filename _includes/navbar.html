@@ -1,22 +1,40 @@
-<div class="navbar navbar-inverse navbar-fixed-top" >
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="page-scroll" href="#">
-                <img src="/assets/img/jack_logos/title_trans_white.png" class="title_logo" alt="">
+{% assign navbar_items = "Home&/, Projects-Tours&/#tours-Commercials&/#commercial-Music Videos&/#music_videos, Profile&/about.html, Contact&#footer" | split: ', ' %}
+
+<div id="navbar">
+    <div class="nav-title">
+        <a href="/" class="nav-title-logo">
+            <img src="{{ site.img_dir }}/logos/logo_trans_white.png" alt="JPM" />
+        </a>
+        <a href="/" class="nav-title-text">Jack Pointer Mackenzie</a>
+        <div class="expander-button hidden">
+            <img src="{{ site.img_dir }}/icons/menu_dropdown.png" alt="" />
+        </div>
+    </div>
+    <div class="nav-menu">
+    {% for navbar_item in navbar_items %}
+        {% assign items_content = navbar_item | split: '-' %}
+        {% if items_content.size == 1 %}
+            {% assign items_data = items_content[0] | split: '&' %}
+            <a href="{{ items_data[1] }}" class="menu-item menu-header nav-link">
+                {{ items_data[0] }}
             </a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="page-scroll" href="#projects">Work</a></li>
-                <li><a class="page-scroll" href="#about">About</a></li>
-                <li><a class="page-scroll" href="#gallery">Gallery</a></li>
-                <li><a class="page-scroll" href="#footer-sec">Contact</a></li>
-            </ul>
-        </div>
+        {% elsif items_content.size >= 1 %}
+            <div class="menu-item menu-header dropdown">
+                <div class="dropdown-header">
+                    <span class="dropdown-title">{{ items_content[0] }}</span>
+                    <div class="dropdown-light">
+                    </div>
+                </div>
+                <div class="dropdown-content hidden">
+                {% for dropdown_item in items_content %}
+                    {% if forloop.first == false %}
+                        {% assign items_data = dropdown_item | split: '&' %}
+                        <a href="{{ items_data[1] }}" class="menu-item nav-link">{{ items_data[0] }}</a>
+                    {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
     </div>
 </div>

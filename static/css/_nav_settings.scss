@@ -1,0 +1,99 @@
+/*
+    |------------|---------------|--------------|
+    |   Title    |   Menu Item   |   Dropdown   |
+    |------------|---------------|--------------|
+                                 |   Menu Item  |
+                                 |--------------|
+                                 |   Menu Item  |
+                                 |--------------|
+*/
+
+//////////// GENERAL ////////////
+// Colours //
+$nav-color: #4a4a4a;
+$nav-text-color: #ffffff;
+$nav-border-color: $theme-color;
+$nav-opacity: 0.96;
+
+// Spacing //
+$nav-height: 54px;
+$nav-side-margin: 0%;
+$nav-top-margin: 0px;
+$nav-border-width: 1px;
+
+// Settings //
+$nav-highlight-percent: 15%;
+
+
+
+///////////// TITLE /////////////
+// Spacing //
+$nav-title-margin: 50px; // Between title and menu items.
+
+// Settings //
+$nav-title-font-size: 23px;
+
+
+
+/////////// MENU ///////////
+// Spacing //
+$nav-menu-item-width: 100px;
+$nav-menu-item-margin: 20px;
+$nav-menu-item-border-width: 0px;
+$nav-dropdown-light-size: 4px;
+$nav-dropdown-light-margin: 15px;
+
+// Settings //
+$nav-menu-font-size: 16px;
+$nav-menu-position: right;      // left, center, right or spread
+$nav-menu-item-position: center;  // left, center or right
+
+
+
+///////////// BUTTON /////////////
+// Colours //
+$nav-button-line-color: #252525;
+$nav-button-shade1: #afafaf;
+$nav-button-shade2: #757575;
+
+// Spacing //
+$nav-button-border-width: 1px;
+$nav-button-padding-percent: 44%;
+
+
+
+
+/////////// CALCULATED VALUES (Don't change) ///////////
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+// Colours
+$nav-highlight-color: tint($nav-color, $nav-highlight-percent);
+$nav-highlight-text-color: tint($nav-text-color, $nav-highlight-percent);
+$nav-small-dropdown-color: shade($nav-color, $nav-highlight-percent);
+$nav-button-line-border-color: mix($nav-button-shade1, $nav-button-line-color, 50%);
+$nav-button-highlight-shade1: tint($nav-button-shade1, $nav-highlight-percent);
+$nav-button-highlight-shade2: tint($nav-button-shade2, $nav-highlight-percent);
+$nav-button-line-highlight-color: tint($nav-button-line-color, $nav-highlight-percent);
+$nav-button-line-border-highlight-color: tint($nav-button-line-border-color, $nav-highlight-percent);
+
+// Spacing
+$nav-inner-height: ($nav-height - $nav-border-width) - 2px;
+$nav-button-margin: $nav-inner-height / 7;
+$nav-button-width: $nav-inner-height - (($nav-button-margin + $nav-button-border-width) * 2);
+$nav-button-padding: $nav-button-width * ($nav-button-padding-percent/200%);
+$nav-button-line-width: $nav-button-width - ($nav-button-padding * 2);
+
+$nav-menu-justify: flex-end;
+@if $nav-menu-position == 'left' {
+    $nav-menu-justify: flex-start;
+} @else if $nav-menu-position == 'center' {
+    $nav-menu-justify: center;
+} @else if $nav-menu-position == 'right' {
+    $nav-menu-justify: flex-end;
+} @else if $nav-menu-position == 'spread' {
+    $nav-menu-justify: space-around;
+}

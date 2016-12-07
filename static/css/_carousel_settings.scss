@@ -1,0 +1,31 @@
+$car-width-percent: 70%;
+$car-height-ratio: 0.75;
+$car-border-width: 0px;
+$car-border-color: $main-border-color;
+
+$car-arrows-top: 47%;
+$car-arrows-width: 116%;
+
+$car-links-top: 105%;
+$car-links-left: 89%;
+$car-links-width: 14%;
+$car-links-min-width: 50px;
+
+$car-control-opicity: 0.75;
+
+
+// Calculated values (Don't change)
+$car-height: $car-width-percent * $car-height-ratio;
+$car-control-highlight-opicity: $car-control-opicity + ((1 - $car-control-opicity) / 1.3);
+$car-arrows-left: (100% - $car-arrows-width) / 2;
+$car-links-left-centered: ((100% - $car-links-width) / 2) + ($car-links-left - 50%);
+
+// Scale links width when small so not too squashed.
+$car-links-small-scale: 1.8;
+$car-links-width-small: $car-links-width * $car-links-small-scale;
+$car-links-left-small-adj: (50% - $car-links-left) / 50%;
+$car-links-left-small: $car-links-left + (((50% - abs(50% - $car-links-left)) * $car-links-left-small-adj) * ($car-links-small-scale - 1));
+@if $car-links-width-small > 100 {
+    $car-links-width-small: $car-links-width;
+}
+$car-links-left-centered-small: ((100% - $car-links-width-small) / 2) + ($car-links-left-small - 50%);

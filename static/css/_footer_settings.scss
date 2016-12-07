@@ -1,0 +1,20 @@
+$footer-color: #545454;
+$footer-width: 90%;
+$footer-border-width: 2px;
+$footer-border-color: $theme-color;
+$footer-opacity: 0.9;
+
+//Style
+$footer-border-radius: 2px;
+$footer-margin-top: 100px;
+$footer-margin-bottom: 40px;
+$footer-padding: 10px;
+$footer-contact-margin: 10px;
+
+$footer-contact-font-size: 16px;
+
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+$footer-border-color-adj: tint($footer-border-color, 20%)

@@ -1,34 +1,31 @@
 ---
-layout: default
+layout: base
 ---
-{% include project_navbar.html %}
 
- <div class="container project_container">
-
-    <h3 class="project-header">{{ page.title }}</h3>
-
-    <div class="project_video">
-        <div class="h_iframe">
-            <img class="ratio" src="{{ page.thumbnail }}"/>
-            <iframe frameborder="0" allowfullscreen
-                src="{{ page.youtube }}">
+{% include project_head.html %}
+<body>
+    {% include navbar.html %}
+    <div class="container">
+        {% include design.html %}
+        <h1 class="project-title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <span class="project-subtitle">{{ page.subtitle }}</span>
+        {% endif %}
+        <div class="project-video">
+            <iframe frameborder="0" allowfullscreen src="{{ page.youtube }}">
             </iframe>
-
         </div>
-  </div>
-
-  <div class="row text-center" >
-      <div class="col-sm-12">
-          <p>{{ content }}</p>
-      </div>
-  </div>
-
-  <div class="row" >
-      <div class="col-md-12">
-          <p class="credentials">
-              {{ page.credentials }}
-          </p>
-      </div>
-  </div>
-
-</div>
+        <div class="project-images">
+        {% for proj_img in page.proj_imgs %}
+            <img src="{{ site.img_dir }}/{{ proj_img }}" alt="{{ proj_img }}" />
+        {% endfor %}
+        </div>
+        <div class="project-text">
+            <p>{{ content }}</p>
+        </div>
+        <div class="project-credentials">
+            <p class="credentials">{{ page.credentials }}</p>
+        </div>
+        {% include footer.html %}
+    </div>
+</body>
