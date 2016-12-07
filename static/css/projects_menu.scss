@@ -68,16 +68,22 @@
             }
         }
     }
-
-
 }
 
 .small .projects-menu {
+    margin-top: $proj-menu-margin-top / 3;
+
     .project-cat {
+        h1 {
+            font-size: 16px;
+            margin-left: 21px;
+            margin-top: 20px;
+        }
         .project-items {
+                justify-content: space-around;
             .project-item {
                 padding-bottom: $proj-menu-item-height-small;
-                min-width: $proj-menu-item-min-width-small;
+                width: $proj-menu-item-min-width-small;
             }
         }
     }

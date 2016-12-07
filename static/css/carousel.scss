@@ -86,6 +86,7 @@
     }
 }
 .small .carousel {
+    width: $car-width-percent + 7%;
     .carousel-container {
         .carousel-arrows {
             .carousel-arrow img {

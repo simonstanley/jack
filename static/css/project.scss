@@ -16,6 +16,7 @@ body {
     color: $body-text-color;
     font-family: "latin-sans", Georgia, Times, "Times New Roman", serif;
     font-size: 16px;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -73,7 +74,7 @@ a {
 .project-text {
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 80%;
 }
 
@@ -97,6 +98,7 @@ a {
         border-left: 1px solid $theme-color;
     }
     .project-video {
+        margin: 0 auto;
         iframe {
             height: 200px;
         }
@@ -105,5 +107,8 @@ a {
         img {
             height: 50px;
         }
+    }
+    .project-text {
+        margin-bottom: 40px;
     }
 }

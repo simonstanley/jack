@@ -6,20 +6,18 @@
     justify-content: space-between;
     position: fixed;
     top: $nav-top-margin;
-    margin-left: -50% + ($nav-side-margin / 2);
-    left:50%;
-    width: 100% - $nav-side-margin;
+    width: 100%;
     height: $nav-height;
     border-bottom: $nav-border-width solid $nav-border-color;
     box-sizing: border-box;
     z-index: 10;
-    background-color: $nav-color;
 
     .nav-title {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         width: 100%;
+        background-color: $nav-color;
 
         .nav-title-logo > img {
             height: $nav-inner-height;
@@ -32,6 +30,7 @@
             font-size: $nav-title-font-size;
             line-height: $nav-inner-height;
             margin-left: 30px;
+            overflow: hidden;
         }
         .expander-button {
             display: flex;
@@ -74,6 +73,7 @@
         justify-content: $nav-menu-justify;
         width: 100%;
         font-size: $nav-menu-font-size;
+        background-color: $nav-color;
 
         .menu-item {
             text-align: $nav-menu-item-position;
@@ -145,18 +145,22 @@
 .small #navbar {
     flex-direction: column;
     height: auto;
+    border-bottom-width: 0;
 
     .nav-title {
         height: $nav-inner-height;
-        justify-content: space-between;;
+        justify-content: space-between;
+        border-bottom: $nav-border-width solid $nav-border-color;
 
         .nav-title-text {
-            margin-left: 0;
+            margin-left: 0px;
             font-size: 19px;
         }
     }
     .nav-menu {
         flex-direction: column;
+        width: 50%;
+        align-self: flex-end;
         .menu-item {
             width: initial;
         }

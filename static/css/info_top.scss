@@ -29,16 +29,34 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        align-self: center;
+
         > img {
             height: 80px;
-            border: 1px solid #000000;
         }
     }
 }
 
 .small .info_top {
+    margin-top: 25px;
+
+    .info_top-text {
+        h2 {
+            font-size: 14px;
+        }
+        ul {
+            margin-bottom: 20px;
+            > li {
+                font-size: 12px;
+            }
+        }
+    }
+
 
     .brands {
-        margin: 0 auto;
+
+        > img {
+            height: 25px;
+        }
     }
 }
