@@ -79,4 +79,31 @@
         {% endfor %}
         </div>
     </div>
+
+	<div id="personal" class="project-cat">
+		<h1>Personal work</h1>
+		<div class="project-items">
+		{% for project_name in page.projects %}
+			{% include projects/{{project_name}}.html %}
+			{% if proj_class == 'personal' %}
+			<div class="project-item">
+				<div class="project-item-container">
+					<a href="{{ proj_url }}" class="item-link">
+						<div class="item-img" style="background-image:url('{{ site.img_dir }}/{{ title_img }}')">
+						</div>
+					</a>
+					<div class="item-blurb">
+						<div class="item-title">
+							{{ title }}
+						</div>
+						<div class="item-subtitle">
+							{{ subtitle }}
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+		{% endfor %}
+		</div>
+	</div>
 </div>
