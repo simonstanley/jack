@@ -6,12 +6,9 @@
     margin: 0 auto;
     margin-top: $footer-margin-top;
     margin-bottom: $footer-margin-bottom;
-    padding: 0 $footer-padding;
+    padding: $footer-padding;
     background-color: $footer-color;
-    border-top: $footer-border-width solid $footer-border-color-adj;
-    border-bottom: $footer-border-width solid $footer-border-color-adj;
-    border-left: 1px solid $footer-border-color-adj;
-    border-right: 1px solid $footer-border-color-adj;
+    border: $footer-border-width solid $footer-border-color-adj;
     border-radius: $footer-border-radius;
     opacity: $footer-opacity;
 
@@ -22,6 +19,7 @@
         width: 100%;
 
         #contact {
+			margin-left: 7px;
             font-size: $footer-contact-font-size;
             color: #ffffff;
         }
