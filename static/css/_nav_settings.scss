@@ -71,7 +71,7 @@ $nav-button-line-highlight-color: tint($nav-button-line-color, $nav-highlight-pe
 $nav-button-line-border-highlight-color: tint($nav-button-line-border-color, $nav-highlight-percent);
 
 // Spacing
-$nav-inner-height: ($nav-height - $nav-border-width) - 2px;
+$nav-inner-height: ($nav-height - $nav-border-width) + 2px;
 $nav-button-margin: $nav-inner-height / 7;
 $nav-button-width: $nav-inner-height - (($nav-button-margin + $nav-button-border-width) * 2);
 $nav-button-padding: $nav-button-width * ($nav-button-padding-percent/200%);

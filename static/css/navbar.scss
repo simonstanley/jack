@@ -27,10 +27,11 @@
         }
 
         .nav-title-text {
-            font-size: $nav-title-font-size;
-            line-height: $nav-inner-height;
-            margin-left: 30px;
-            overflow: hidden;
+			font-size: $nav-title-font-size;
+			line-height: $nav-inner-height;
+			margin-left: 30px;
+			overflow: hidden;
+			text-transform: lowercase;
         }
         .expander-button {
             display: flex;
@@ -102,7 +103,7 @@
             }
         }
         .menu-header {
-            border-left: $nav-menu-item-border-width solid $nav-border-color;
+			border-left: $nav-menu-item-border-width solid $nav-border-color;
         }
 
         .dropdown {

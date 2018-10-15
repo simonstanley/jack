@@ -37,3 +37,31 @@
     font-weight: bold;
     font-style: normal;
 }
+
+// Didcot
+@font-face {
+    font-family:"didcot";
+    src: url("../fonts/Didot-HTF-B06-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Antipasto
+@font-face {
+    font-family:"antipasto";
+    src: url("../fonts/antipasto/AntipastoPro-Medium_trial.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:"antipasto";
+    src: url("../fonts/antipasto/AntipastoPro-Bold_trial.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family:"antipasto";
+    src: url("../fonts/antipasto/AntipastoPro-Extralight_trial.ttf") format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}

@@ -1,0 +1,70 @@
+---
+# Styles for landing page.
+---
+@import "fonts";
+@import "_main_settings";
+@import "_nav_settings";
+@import "navbar";
+@import "_title_settings";
+@import "title";
+@import "_footer_settings";
+@import "footer";
+@import "design";
+
+body {
+	background-color: $body-background-color;
+	background-image: url('/static/img/rebel.png');
+	color: $body-text-color;
+	font-family: "latin-sans", Georgia, Times, "Times New Roman", serif;
+	font-weight: lighter;
+	font-size: $main-font-size;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: $body-text-color;
+}
+.container {
+	margin: 0 auto;
+	margin-top: $nav-height + $nav-top-margin + $main-top-margin;
+	max-width: $main-max-width;
+}
+.hidden {
+	display: none !important;
+}
+
+
+#landing {
+	width: 100%;
+	height: 64vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.inner-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.box {
+		display: inline-block;
+		border: 7px $theme-color solid;
+		width: 200px;
+		height: 200px;
+		margin: 15px 6vh;
+	}
+	.box:hover {
+		border-color: $theme-color-lighter;
+	}
+	img {
+		width: 100%;
+	}
+
+	.title {
+		display: inline-block;
+	}
+}

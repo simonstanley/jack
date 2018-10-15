@@ -1,0 +1,14 @@
+<div class="info_top">
+    <div class="info_top-text">
+        <h2 class="info_top-title">Services</h2>
+        <ul>
+            <li>Videography</li>
+            <li>Editing</li>
+        </ul>
+    </div>
+    <div class="brands">
+        {% for img_url in page.brand_imgs %}
+            <img class="brand" src="{{ site.img_dir }}/{{ img_url }}">
+        {% endfor %}
+    </div>
+</div>
