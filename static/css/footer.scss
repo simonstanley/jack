@@ -11,6 +11,7 @@
     border: $footer-border-width solid $footer-border-color-adj;
     border-radius: $footer-border-radius;
     opacity: $footer-opacity;
+	font-family: Georgia, Times, "Times New Roman", serif;
 
     .footer-main {
         display: flex;
@@ -20,6 +21,7 @@
 
         #contact {
 			margin-left: 7px;
+			margin-top: 4px;
             font-size: $footer-contact-font-size;
             color: #ffffff;
         }
@@ -37,6 +39,7 @@
     float: right;
     margin-bottom: 15px;
     margin-right: 15px;
+	font-family: "latin-sans", Georgia, Times, "Times New Roman", serif;
 }
 .small #footer {
     margin-top: 30px;
