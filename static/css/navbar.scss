@@ -11,7 +11,6 @@
     border-bottom: $nav-border-width solid $nav-border-color;
     box-sizing: border-box;
     z-index: 10;
-	font-family: "antipasto", Georgia, Times, "Times New Roman", serif;
 
     .nav-title {
         display: flex;
@@ -156,7 +155,6 @@
 
         .nav-title-text {
             margin-left: 0px;
-            font-size: 19px;
         }
     }
 	.nav-title.landing .spacer {

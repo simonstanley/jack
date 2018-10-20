@@ -20,21 +20,13 @@ body {
 	background-color: $body-background-color;
 	background-image: url('/static/img/rebel.png');
 	color: $body-text-color;
-	font-family: "didcot", "antipasto", Georgia, Times, "Times New Roman", serif;
-	font-weight: lighter;
+	font-family: 'Montserrat', sans-serif;
 	font-size: $main-font-size;
 	margin: 0;
-	line-height: 1;
 }
 a {
     text-decoration: none;
     color: $body-text-color;
-}
-p {
-	line-height: 1.05;
-}
-h1, h2 {
-	font-weight: normal;
 }
 .container {
     margin: 0 auto;

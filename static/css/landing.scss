@@ -15,11 +15,10 @@ body {
 	background-color: $body-background-color;
 	background-image: url('/static/img/rebel.png');
 	color: $body-text-color;
-	font-family: "didcot", "antipasto", Georgia, Times, "Times New Roman", serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
 	font-size: $main-font-size;
 	margin: 0;
-	line-height: 1;
 }
 a {
 	text-decoration: none;
